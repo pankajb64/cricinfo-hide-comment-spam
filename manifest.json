@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  
+  "browser_action": {
+    "default_icon": {                    // optional
+      "19": "assets/images/19.png"           // optional
+    },
+    "default_title": "Cricinfo Hide Spam Comments",      // optional; shown in tooltip
+    "default_popup": "views/popup.html"        // optional
+  },
+  
+  "content_scripts": [ { 
+      "js": [ "lib/vendor/jquery.js", 
+			  "lib/content_script.js"	
+            ],
+      "matches": [ "*://www.espncricinfo.com/*engine*match*" ]
+  } ],
+  
+  "name": "Cricinfo Hide Spam Comments",
+  "version": "1.0",
+  "description": "Hide/Reddify comments on Cricinfo that feel like spam",
+  "permissions": [
+  "activeTab",
+  "http://www.espncricinfo.com/*engine*match*"
+  ],
+  
+  "icons": {	
+    "128": "assets/images/128.png"
+  }
+}

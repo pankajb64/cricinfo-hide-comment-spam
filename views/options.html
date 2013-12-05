@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Options</title>
+    <script type="text/javascript" src="../lib/vendor/jscolor/jscolor.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/themes.css">
+<body>
+  <h1 class ="heading">Customize ScrollPad (colors are Hex Values)</h1>
+  <div class="container">
+      <canvas id="spbg" width="200" height="200" ></canvas>
+      <canvas id="spview" width="100" height="100" ></canvas>
+
+      <div class="options">
+        <div class="option">
+            <label for="background"> Border: </label>
+            <input id="border_colour" name="background" class="color" value="18EDDF">
+        </div>
+        <div class="option">
+            <label for="border">bgcolor: </label>
+            <input id="background_colour" name="border" class="color" value="000000">
+        </div>
+        <div class="option">
+            <label for="view"> View: </label>
+            <input id="inner_colour" name="view" class="color" value="FFFFFF"> <br/>
+        </div>
+        <div class="buttons">
+            <button id="save" class="btn">Save</button>
+            <button id="reset" class="btn">Reset</button>
+            <div id="status"></div>
+        </div>
+      </div>
+  </div>
+  <div id="credits">
+    <strong>
+      <i>ScrollPad!</i> 
+      <span>is written by </span> 
+      <a href="https://github.com/jigneshhk">Jignesh Kakadiya</a> 
+      <span>and</span> 
+      <a href="https://github.com/pankajb64">Pankaj Bhambhani</a> 
+      <span>(get </span>
+      <a href="https://github.com/jigneshhk/ScrollPad">source!</a>
+      <span>)</span>
+    </strong>
+  </div>
+  <script type="text/javascript" src="../lib/util.js"></script>
+  <script type="text/javascript" src="../lib/options.js"></script>
+</body>
+</html>
