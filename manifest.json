@@ -18,7 +18,7 @@
   
   "name": "Cricinfo Hide Spam Comments",
   "version": "1.0",
-  "description": "Hide/Reddify comments on Cricinfo that feel like spam",
+  "description": "Hide/Blacken comments on Cricinfo that feel like spam",
   "permissions": [
   "activeTab",
   "http://www.espncricinfo.com/*engine*match*"
